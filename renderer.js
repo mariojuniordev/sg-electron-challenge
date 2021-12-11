@@ -10,6 +10,7 @@ searchInput.addEventListener('keypress', setQuery);
 // getResults function (receiving the searchInput.value as parameter 
 // if the 'keypress' event.keyCode equals 13 (which is the ENTER key code)
 function setQuery(event) {
+
   if (event.keyCode == 13) {
     getResults(searchInput.value);
   }
