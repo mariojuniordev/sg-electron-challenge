@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World! I'm mariojuniordev2</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" outocomplete="off" class="search-box" placeholder="City Name..." />
+    </header>
+    <main>
+      <section class="localtion">
+        <div class="city">Type a City Name to Check the Forecast for Today</div>
+        <div class="date"></div>
+      </section>
+      <div class="current">
+        <div class="temp"></div>
+        <div class="weather"></div>
+        <div class="min-max"></div>
+      </div>
+    </main>
+  </div>  
+  <script src="./renderer.js"></script>
+</body>
 </html>
