@@ -16,6 +16,12 @@ function setQuery(event) {
   }
 }
 
+// handleSubmitButtonClick executes the getResults function once the 
+// textInput area has a valid city name 
+function handleSubmitButtonClick() {
+  getResults(searchInput.value);
+}
+
 // getResults consumes the API, converts the responses to the JSON format
 // and then executes the showResults function
 function getResults(query) {
