@@ -11,13 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="app-wrap">
-    <header>
+  <div>
+    <header class="show-case">
       <input type="text" autocomplete="off" class="search-input" placeholder="City Name..." />
     </header>
+  
+    <video src="assets/background.mp4" muted loop autoplay ></video>
+
     <main>
       <section class="location">
-        <div class="city">Type a City Name to Check the Forecast for Today</div>
+        <div class="city">Type a City Name to Check Today's Forecast</div>
         <div class="date"></div>
       </section>
       <div class="current">
@@ -27,6 +30,8 @@
       </div>
     </main>
   </div>  
+
+  <footer></footer>
   <script src="./renderer.js"></script>
 </body>
 </html>
