@@ -7,7 +7,7 @@ const searchInput = document.querySelector('.search-input');
 searchInput.addEventListener('keypress', setQuery);
 
 // setQuery receives an EventListener as parameter and executes the
-// getResults function (receiving the searchInput.value as parameter 
+// getResults function (receiving the searchInput.value as parameter) 
 // if the 'keypress' event.keyCode equals 13 (which is the ENTER key code)
 function setQuery(event) {
 
